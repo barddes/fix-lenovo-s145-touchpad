@@ -15,9 +15,9 @@ if ! [[ $OLD_PARAMS == *"pci="* ]]; then
 	echo "Adding param: pci=nocrs"
 fi
 
-sed -i -E "s/GRUB_CMDLINE_LINUX_DEFAULT=\"$OLD_PARAMS\"/GRUB_CMDLINE_LINUX_DEFAULT=\"$NEW_PARAMS\"/" /etc/default/grub
+sudo sed -i -E "s/GRUB_CMDLINE_LINUX_DEFAULT=\"$OLD_PARAMS\"/GRUB_CMDLINE_LINUX_DEFAULT=\"$NEW_PARAMS\"/" /etc/default/grub
 
-source /etc/default/grub
+# source /etc/default/grub
 # echo "Kernel params: $GRUB_CMDLINE_LINUX_DEFAULT"
 
 
