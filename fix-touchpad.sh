@@ -1,5 +1,7 @@
 #!/bin/bash
 
+sudo cp /etc/default/grup /etc/default/grub.old.bkp
+
 source /etc/default/grub
 
 OLD_PARAMS="$GRUB_CMDLINE_LINUX_DEFAULT"
