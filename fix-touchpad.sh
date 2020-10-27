@@ -18,6 +18,7 @@ if ! [[ $OLD_PARAMS == *"pci="* ]]; then
 fi
 
 sudo sed -i -E "s/GRUB_CMDLINE_LINUX_DEFAULT=\"$OLD_PARAMS\"/GRUB_CMDLINE_LINUX_DEFAULT=\"$NEW_PARAMS\"/" /etc/default/grub
+sudo update-grub
 
 # source /etc/default/grub
 # echo "Kernel params: $GRUB_CMDLINE_LINUX_DEFAULT"
