@@ -1,6 +1,6 @@
 #!/bin/bash
 
-sudo cp /etc/default/grup /etc/default/grub.old.bkp
+sudo cp /etc/default/grub /etc/default/grub.old.bkp
 
 source /etc/default/grub
 
